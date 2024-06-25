@@ -1,17 +1,31 @@
-<your secret here>      <<  Change this line. The secret must be placed in the first line
+814c5723c21e7e90a3eae36c8df3c513      <<  Change this line. The secret must be placed in the first line
 
 
 Kernel System Calls
 -------------------
-<Your Answer>
-
+The program checks for a diractory called "welcomeToDevOpsTheHardWay".
+If not, it creates a new folder with this name and creates a new file inside the folder called "goodluck".
+After that the program verifies recovery, writes in the file "There you go... tell me what I do next" and closes the file
 
 Broken Symlink
 -------------------
-<Your Answer>
-
-
+When you created the symlink, use a relative path that specifies a location in relation to the current working directory.
+When they changed the location of the file "latest-backup.obj" they also changed the inode where the file should use it.
+In order to change the location of the file and not change the inode we will use an absolute path:
+In -s ../backups/$FILENAME backups/latest-backup.obj
 
 Binary Numbers
 --------------
-<Your Answer>
+1.111 = (1*2^2) + (1*2^1) + (1*2^0) = 7
+  100 = (1*2^2) + (0*2^1) + (0*2^0) = 4
+  10110 = (1*2^4) + (0*2^3) + (1*2^2) + (1*2^1) + (0*2^0) = 22
+2. The available decimal range represented by 8 bits binary number is 255, so the range would be 0—255 (256 values).
+3.The numbers represented between -255 and 255 in the binary language are represented by 8 bits, to represent the negative numbers we will add a check digit (0) on the left side of the number and then use the two's complement method.
+For example:
+To represent the negative number of 233 we will perform the following actions:
+- We will convert the number 233 to a binary number - 11101001
+- Add a bit to the left of the number (check digit) - 011101001
+- We will convert the numbers from 1 to 0 and from 0 to 1 - 100010110
+- We add 1 - 100010110
+100010110 is the binary number that represents 233 by 9 bits
+4.
