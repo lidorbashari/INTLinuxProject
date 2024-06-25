@@ -28,4 +28,11 @@ To represent the negative number of 233 we will perform the following actions:
 - We will convert the numbers from 1 to 0 and from 0 to 1 - 100010110
 - We add 1 - 100010110
 100010110 is the binary number that represents 233 by 9 bits
-4.
+4.In order to represent a decimal number using 8-bit binary numbers, we divide the binary number in this way:
+The first number (left) represents whether the number is positive or negative (0 for positive and 1 for negative)
+The next three numbers will be the decimal number in a simple binary calculation
+The next four numbers will be the fractional part of the number
+For example (number 12.3):
+In binary calculation the number will look like this - 1100.0100
+After encoding the exponent and calculating the mantasia, the next 4 bits are 1000
+So the decimal representation is 01101000.
